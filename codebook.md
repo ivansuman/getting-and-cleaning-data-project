@@ -1,17 +1,33 @@
 
 Data
 
-The tidy_data.txt data file is a text file, containing space-separated values.
+The tidy_data.txt data file is a text file, containing values that are space seperated.
 
 The first row contains variable names which are listed and described below.
 Variables
 
+    DataURL - Where the data is
+    datafile - File name that is downloaded
+    trainingSubjects - subjects in the training file
+    trainingValues - the values (x axis) in the training file
+    trainingActivity - the activity (y axis) in the training file
+    testSubjects - subjects in the test file
+    testValues - the values (x axis) in the test file
+    testActivity - the activities (y axis) in the test file
+    features - the features file 
+    activities - the activities file
+    humanActivity - all the variable with the training and test files bound/merged into one new table
+    humanActivityCols - the colums of the merged table 
+    columsToKeep - which columns are kept in the new table
+    humanActivity$activity - replacing activity labels with factor labels
+    humanActivityMeans- mean of the human activiy data
+    
 Identifiers
 
     subject
 
     Subject identifier, integer, the range being between 1 and 30
-    activity
+    
 
     Activity identifier, string with 6 possible values:
         WALKING: subject was walking
